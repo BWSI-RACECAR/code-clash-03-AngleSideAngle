@@ -38,6 +38,35 @@ Input: center= 800, tuples(x, y) = (1600, 900)  Output: 0.000000
 Input: center= 720, tuples(x, y) = (1440, 900)  Output: 0.000000
 """
 
+def remap_range(
+    val: float,
+    old_min: float,
+    old_max: float,
+    new_min: float,
+    new_max: float,
+) -> float:
+    """
+    Remaps a value from one range to another range.
+
+    Args:
+        val: A number form the old range to be rescaled.
+        old_min: The inclusive 'lower' bound of the old range.
+        old_max: The inclusive 'upper' bound of the old range.
+        new_min: The inclusive 'lower' bound of the new range.
+        new_max: The inclusive 'upper' bound of the new range.
+
+    Note:
+        min need not be less than max; flipping the direction will cause the sign of
+        the mapping to flip.  val does not have to be between old_min and old_max.
+    """
+
+    diff = old_max - old_min
+    percent = val / diff
+    new_val = percent * (new_max - new_min)
+    new_val += new_min
+
+    return new_val
+
 class Solution:
 
     def propcontrol(self, center, res):
@@ -46,7 +75,7 @@ class Solution:
             #return type: float
             
             #TODO: Write code below to return a float with the solution to the prompt.
-            return res[0] - center
+            return remap_range(center, 0, res[0], -1, 1)
         
         
 
