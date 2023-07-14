@@ -46,7 +46,7 @@ class Solution:
             #return type: float
             
             #TODO: Write code below to return a float with the solution to the prompt.
-            return res - center
+            return res - center[0]
         
         
 
