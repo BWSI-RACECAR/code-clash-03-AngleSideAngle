@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "Test1",
+      "setup": "",
+      "run": "python3 propcontrol.py",
+      "input": "400\r\n800\r\n600",
+      "output": "0.000000",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test2",
+      "setup": "",
+      "run": "python3 propcontrol.py",
+      "input": "480\r\n1200\r\n600",
+      "output": "-0.200000",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test3",
+      "setup": "",
+      "run": "python3 propcontrol.py",
+      "input": "800\r\n1600\r\n900",
+      "output": "0.000000",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test4",
+      "setup": "",
+      "run": "python3 propcontrol.py",
+      "input": "700\r\n1200\r\n500",
+      "output": "0.166667",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test5",
+      "setup": "",
+      "run": "python3 propcontrol.py",
+      "input": "800\r\n1200\r\n600",
+      "output": "0.333333",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test6",
+      "setup": "",
+      "run": "python3 propcontrol.py",
+      "input": "1200\r\n2400\r\n900",
+      "output": "0.000000",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test7",
+      "setup": "",
+      "run": "python3 propcontrol.py",
+      "input": "1500\r\n4800\r\n1200",
+      "output": "-0.375000",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test8",
+      "setup": "",
+      "run": "python3 propcontrol.py",
+      "input": "1280\r\n2500\r\n950",
+      "output": "0.024000",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test9",
+      "setup": "",
+      "run": "python3 propcontrol.py",
+      "input": "800\r\n1280\r\n200",
+      "output": "0.250000",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test10",
+      "setup": "",
+      "run": "python3 propcontrol.py",
+      "input": "1000\r\n1200\r\n700",
+      "output": "0.666667",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
